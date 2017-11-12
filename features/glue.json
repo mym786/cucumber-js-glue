@@ -1,0 +1,10 @@
+[
+	{
+		"feature_name":"feature1.feature",
+		"step_definition":"feature1_step.js"
+	},
+	{
+		"feature_name":"feature2.feature",
+		"step_definition":"feature2_step.js"
+	}
+]
