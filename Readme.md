@@ -25,5 +25,5 @@ npm i cucumber-js-glue --save
 
 ## Supported OS 
 
-- Windows (Tested)
+- Windows 
 - Linux 
