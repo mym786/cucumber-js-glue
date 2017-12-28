@@ -11,17 +11,15 @@ const config = require(process.cwd()+'\/features\/glue.json');
 ls = null;
 
 function AsyncIteration(list,fn){
-	
-	var index = 0;
-	
-	fn(list[index])
-		.then(() => 
-		{
+	var index = 0;	
+	var iterate = function (){
+		fn(list[index]).then(() => {
 			++index;
 			if(list.length != index)
-				fn(list[index]);
+				iterate();
 		});
-	
+	}
+	iterate();
 }
 
 function work(value){
